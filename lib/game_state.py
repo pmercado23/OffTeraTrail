@@ -22,8 +22,8 @@ class GameState:
         self.stock_remaining = 100.0
 
 
-def load_data():
-    return Player([Person("harry"), Person("dan")],
-                  [Person("suraj"), Person("pierre")],
-                  100000,
-                  100)
+# def load_data():
+#     return Player([Person("harry"), Person("dan")],
+#                   [Person("suraj"), Person("pierre")],
+#                   100000,
+#                   100)
