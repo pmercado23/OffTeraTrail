@@ -7,3 +7,5 @@ def roll_d(x):
     """
     return randint(0, x)
 
+def print_message(message):
+    print(message)
