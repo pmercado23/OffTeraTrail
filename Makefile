@@ -23,7 +23,7 @@ cleanall:	clean
 	rm -rf ${CURDIR}/env
 
 run:
-	${CURDIR}/env/bin/python3 ${CURDIR}/lib/main.py
+	${CURDIR}/env/bin/python3 ${CURDIR}/main.py
 
 test:
 	${CURDIR}/env/bin/python3 ${CURDIR}/lib/test.py
