@@ -1,7 +1,7 @@
-from lib.game_turn import turn
-from lib.setup import start_game
+from offtera.game_turn import turn
 from offtera.messages import congratulate
 from offtera.messages import roast
+from offtera.start import start_game
 
 
 def main():
