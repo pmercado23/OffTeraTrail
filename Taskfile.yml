@@ -1,17 +1,17 @@
-# CURDIR = $(realpath $(dir $(firstword $(MAKEFILE_LIST))))
+version: "2"
 
-# # Rules
-# all:: devinstall
+tasks:
+  default:
+    cmds:
+      - echo "No default task."
+    silent: true
 
-# create_env:
-# 	cd ${CURDIR}
-# 	virtualenv -p python3.6 env
-
-# install_requirements:
-# 	(. ${CURDIR}/env/bin/activate && pip3 install -r requirements.txt)
-
-# devinstall:	create_env install_requirements
-
+  bootstrap:
+    cmds:
+      - brew install pipenv
+      - pip3 install pre-commit
+      - pre-commit install
+      - pipenv install --dev
 # clean:
 # 	rm -rf ${CURDIR}/build ${CURDIR}/dist ${CURDIR}/*.egg-info
 
@@ -23,4 +23,4 @@
 # 	${CURDIR}/env/bin/python3 ${CURDIR}/lib/main.py
 
 # test:
-${CURDIR}/env/bin/python3 ${CURDIR}/lib/test.py
+# ${CURDIR}/env/bin/python3 ${CURDIR}/lib/test.py
