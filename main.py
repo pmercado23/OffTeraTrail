@@ -1,5 +1,5 @@
-from lib.setup import start_game
 from lib.game_turn import turn
+from lib.setup import start_game
 from offtera.messages import congratulate
 from offtera.messages import roast
 
