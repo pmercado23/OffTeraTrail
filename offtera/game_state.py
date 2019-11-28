@@ -6,12 +6,7 @@ class GameState:
     """
 
     def __init__(
-        self,
-        load_from=None,
-        months=0,
-        funding_cost=0,
-        motivation=0,
-        player_data=0,
+        self, load_from=None, months=0, funding_cost=0, motivation=0, player_data=0,
     ):
         self.months_since_founding = 0
         if load_from is None:

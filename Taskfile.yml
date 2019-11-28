@@ -12,15 +12,15 @@ tasks:
       - pip3 install pre-commit
       - pre-commit install
       - pipenv install --dev
-# clean:
-# 	rm -rf ${CURDIR}/build ${CURDIR}/dist ${CURDIR}/*.egg-info
+  clean:
+    cmds:
+      - rm -rf ./build ./dist ./*.egg-info
 
-# cleanall:	clean
-# 	# Nuke the env
-# 	rm -rf ${CURDIR}/env
+  run:
+    cmds:
+      - pipenv run python main.py
 
-# run:
-# 	${CURDIR}/env/bin/python3 ${CURDIR}/lib/main.py
-
-# test:
-# ${CURDIR}/env/bin/python3 ${CURDIR}/lib/test.py
+  test:
+    cmds:
+      - echo LOOOL
+    silent: true

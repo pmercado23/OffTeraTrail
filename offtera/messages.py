@@ -28,4 +28,4 @@ def turn_prompt(turn_number):
     """
     message = f"Turn: {turn_number}"
     print(message)
-    proceed = input("Proceed?\n")
+    _ = input("Proceed?\n")

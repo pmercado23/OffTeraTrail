@@ -1,4 +1,4 @@
-import lib.messages as messages
+import offtera.messages as messages
 
 
 def turn(state):
